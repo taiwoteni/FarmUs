@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#BAB9B9</color>
+    <color name="blue">#2196F3</color>
+    <color name="light_red">#FFC1BD</color>
+    <color name="blueTransparent">#332196F3</color>
+    <color name="red">#CC1B0E</color>
+    <color name="redTransparent">#33CC1B0E</color>
+
+    <color name="yellow">#FF9800</color>
+    <color name="yellowTransparent">#33FF9800</color>
+
+    <color name="primaryLight">#FF000000</color>
+    <color name="primaryDark">#FFFFFFFF</color>
+    <color name="secondaryLight">#8A000000</color>
+    <color name="secondaryDark">#B3FFFFFF</color>
+    <color name="tertiaryLight">#FAF7F7F3</color>
+    <color name="tertiaryDark">#1F1F20</color>
+    <color name="backgroundLight">#FFFFFF</color>
+    <color name="backgroundDark">#141415</color>
+    <color name="rootBackgroundLight">#FFFFFF</color>
+    <color name="rootBackgroundDark">#1F1F20</color>
+
+    <color name="whiteTransparent">#99FFFFFF</color>
+
+    <color name="workspacePlaceholder">#FACFCCCC</color>
+    <color name="cloudy_weather">#0C0C3A</color>
+    <color name="sunny_weather">#F9C61D</color>
+
+    <color name="themeColor">#9C27B0</color>
+    <color name="greenTransparent">#33109E15</color>
+    <color name="highlightColor">#459C27B0</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+
+</resources>

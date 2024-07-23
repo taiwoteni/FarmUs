@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FarmUs" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryLight</item>
+        <item name="colorTertiary">@color/tertiaryLight</item>
+        <item name="colorSecondary">@color/secondaryLight</item>
+        <item name="background">@color/backgroundLight</item>
+        <item name="colorOnBackground">@color/rootBackgroundLight</item>
+        <item name="colorBackgroundFloating">#0C000000</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>
