@@ -33,6 +33,7 @@
             android:layout_centerVertical="true">
 
             <TextView
+                android:id="@+id/businessOwner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -41,6 +42,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/businessName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
@@ -60,6 +62,17 @@
         android:textSize="@dimen/medium_font_size"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/noRecentSalesYet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="No sales yet..."
+        android:textSize="@dimen/regular_font_size"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recentSales"
         android:layout_width="match_parent"
@@ -78,6 +91,17 @@
         android:textSize="@dimen/medium_font_size"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/noPopularProductsYet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="No popular products yet..."
+        android:textSize="@dimen/regular_font_size"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/popularAdverts"
         android:layout_width="match_parent"
@@ -95,6 +119,17 @@
         android:layout_marginStart="20dp"
         android:textSize="@dimen/medium_font_size"
         android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/noSimilarProductsYet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="No similar products to yours..."
+        android:textSize="@dimen/regular_font_size"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/similarAdverts"
