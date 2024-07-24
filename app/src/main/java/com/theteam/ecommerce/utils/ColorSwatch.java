@@ -1,9 +1,8 @@
 package com.theteam.ecommerce.utils;
 
-import android.content.Context;
+import static android.os.Build.VERSION_CODES.R;
 
-import com.theteam.taskz.R;
-import com.theteam.taskz.data.models.TaskModel;
+import android.content.Context;
 
 public class ColorSwatch {
 
@@ -11,17 +10,17 @@ public class ColorSwatch {
     public ColorSwatch(Context context){
         this.context = context;
     }
-    public int getTaskColor(TaskModel model){
-        switch (model.category.toLowerCase()){
-            case "personal":
-                return context.getApplicationContext().getColor(R.color.purple_700);
-            case "uncategorized":
-                return context.getApplicationContext().getColor(R.color.yellow);
-            case "study":
-                return context.getApplicationContext().getColor(R.color.themeColor);
-            //This would be for "work"
-            default:
-                return context.getApplicationContext().getColor(R.color.red);
-        }
-    }
+//    public int getTaskColor(TaskModel model){
+//        switch (model.category.toLowerCase()){
+//            case "personal":
+//                return context.getApplicationContext().getColor(R.color.purple_700);
+//            case "uncategorized":
+//                return context.getApplicationContext().getColor(R.color.yellow);
+//            case "study":
+//                return context.getApplicationContext().getColor(R.color.themeColor);
+//            //This would be for "work"
+//            default:
+//                return context.getApplicationContext().getColor(R.color.red);
+//        }
+//    }
 }

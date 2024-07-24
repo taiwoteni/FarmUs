@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VendorProfileFragment">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/circle_background"
+        android:background="@drawable/circle_background"
+        android:clipToOutline="true"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Ifechukwu"
+        android:textSize="@dimen/large_font_size"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Fish Farmer"
+        android:textSize="@dimen/regular_font_size"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:background="@drawable/card_background"
+        style="@style/cardBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <!--Night mode-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/night_mode_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/night_mode_icon"
+                android:background="@drawable/black_icon_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:text="Dark Mode"
+                android:textSize="@dimen/regular_font_size"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/night_mode_icon"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/night_mode_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:switchMinWidth="50dp"
+                android:theme="@style/nightModeSwitch"/>
+        </RelativeLayout>
+        <!--Notification-->
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/notifications_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/notifications_icon"
+                android:background="@drawable/yellow_icon_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:text="Notifications"
+                android:textSize="@dimen/regular_font_size"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/notifications_icon"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:switchMinWidth="50dp"
+                android:theme="@style/notificationSwitch"/>
+        </RelativeLayout>
+        <!--Private Account-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/private_acc_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/newsletter_icon"
+                android:background="@drawable/green_icon_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:text="Subscribe for newsletter"
+                android:textSize="@dimen/regular_font_size"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/private_acc_icon"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:switchMinWidth="50dp"
+                android:theme="@style/privateSwitch"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/profile_setting_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/person_icon_2"
+                android:background="@drawable/black_icon_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:text="Profile Settings"
+                android:textSize="@dimen/regular_font_size"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/profile_setting_icon"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:onClick="GoToProfileSettings"
+                android:src="@drawable/forward_icon" />
+        </RelativeLayout>
+        <!--Notification-->
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/about_us_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/about_us_icon"
+                android:background="@drawable/yellow_icon_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:text="About Us"
+                android:textSize="@dimen/regular_font_size"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/about_us_icon"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:onClick="GoToProfileSettings"
+                android:src="@drawable/forward_icon" />
+        </RelativeLayout>
+        <!--Private Account-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/log_out_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/log_out_icon"
+                android:background="@drawable/green_icon_background"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:text="Log out"
+                android:textSize="@dimen/regular_font_size"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/log_out_icon"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:onClick="GoToProfileSettings"
+                android:src="@drawable/forward_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

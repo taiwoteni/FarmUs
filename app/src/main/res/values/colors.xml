@@ -8,11 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#BAB9B9</color>
+    <color name="grey2">#Ececec</color>
     <color name="blue">#2196F3</color>
     <color name="light_red">#FFC1BD</color>
     <color name="blueTransparent">#332196F3</color>
     <color name="red">#CC1B0E</color>
     <color name="redTransparent">#33CC1B0E</color>
+    <color name="black2">#272727</color>
+    <color name="outerSpace">#474747</color>
+    <color name="appColor">#FF109E15</color>
+    <color name="appColorTransparent">#FF109E15</color>
 
     <color name="yellow">#FF9800</color>
     <color name="yellowTransparent">#33FF9800</color>

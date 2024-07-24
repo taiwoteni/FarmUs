@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/square_background"
+            android:background="@drawable/square_background"
+            android:clipToOutline="true"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Popular Products"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:textSize="@dimen/regular_font_size"
+            android:textStyle="bold"/>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginEnd="5dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginStart="5dp"-->
+<!--            android:layout_gravity="center">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/profileImg"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@drawable/circle_background"-->
+<!--                android:background="@drawable/circle_background"-->
+<!--                android:clipToOutline="true"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_toEndOf="@+id/profileImg"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:text="Abiodun Ese"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:textSize="@dimen/regular_font_size"-->
+<!--                android:textStyle="bold"/>-->
+<!--        </RelativeLayout>-->
+    </LinearLayout>
+</LinearLayout>
